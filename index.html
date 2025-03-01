@@ -141,7 +141,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" ">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/9.png);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -159,10 +159,9 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Web & SoftWare Developer  ',
-						'Designer',
-						'Engineer  ',
-						'Singer   ',
+						'Laravel Developer',
+						'RESTful APIs with Laravel ',
+						'Eloquent ORM '
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -171,14 +170,14 @@
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+							}, i * 20); // Increase the delay to slow down the typing animation
 						}
 
 						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
+						}, text.length * 50);
 						}
 
 						// Start the typing animation loop
@@ -188,7 +187,6 @@
 
 						<br>
 						<br>
-			            <h2>A Web & Software Developer</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <p><a href="https://www.linkedin.com/in/mridul-roy-064408183/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
